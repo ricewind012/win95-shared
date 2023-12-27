@@ -1,0 +1,16 @@
+.menu {
+	background-color: var(--color-button-face);
+	color: var(--color-button-text);
+	box-shadow: var(--border-window);
+
+	padding: 3px;
+}
+
+.menu-entry {
+  padding: 2px 20px;
+
+  &:hover {
+    background-color: var(--color-highlight);
+    color: var(--color-highlight-text);
+  }
+}

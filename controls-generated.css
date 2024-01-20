@@ -1127,78 +1127,132 @@ select {
 	}
 }
 
-::-webkit-scrollbar-button {
-	&:decrement {
-		--button-img:
-			linear-gradient(90deg,              transparent 1px,              transparent) 4px  6px,
-			linear-gradient(90deg,              transparent 1px,              transparent) 5px  6px,
-			linear-gradient(90deg,              transparent 1px,              transparent) 6px  6px,
-			linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 7px  6px,
-			linear-gradient(90deg,              transparent 1px,              transparent) 8px  6px,
-			linear-gradient(90deg,              transparent 1px,              transparent) 9px  6px,
-			linear-gradient(90deg,              transparent 1px,              transparent) 10px 6px,
-			linear-gradient(90deg,              transparent 1px,              transparent) 4px  7px,
-			linear-gradient(90deg,              transparent 1px,              transparent) 5px  7px,
-			linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 6px  7px,
-			linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 7px  7px,
-			linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 8px  7px,
-			linear-gradient(90deg,              transparent 1px,              transparent) 9px  7px,
-			linear-gradient(90deg,              transparent 1px,              transparent) 10px 7px,
-			linear-gradient(90deg,              transparent 1px,              transparent) 4px  8px,
-			linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 5px  8px,
-			linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 6px  8px,
-			linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 7px  8px,
-			linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 8px  8px,
-			linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 9px  8px,
-			linear-gradient(90deg,              transparent 1px,              transparent) 10px 8px,
-			linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 4px  9px,
-			linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 5px  9px,
-			linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 6px  9px,
-			linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 7px  9px,
-			linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 8px  9px,
-			linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 9px  9px,
-			linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 10px 9px;
-	}
-
-	&:increment {
-		--button-img:
-			linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 4px  6px,
-			linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 5px  6px,
-			linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 6px  6px,
-			linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 7px  6px,
-			linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 8px  6px,
-			linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 9px  6px,
-			linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 10px 6px,
-			linear-gradient(90deg,              transparent 1px,              transparent) 4px  7px,
-			linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 5px  7px,
-			linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 6px  7px,
-			linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 7px  7px,
-			linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 8px  7px,
-			linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 9px  7px,
-			linear-gradient(90deg,              transparent 1px,              transparent) 10px 7px,
-			linear-gradient(90deg,              transparent 1px,              transparent) 4px  8px,
-			linear-gradient(90deg,              transparent 1px,              transparent) 5px  8px,
-			linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 6px  8px,
-			linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 7px  8px,
-			linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 8px  8px,
-			linear-gradient(90deg,              transparent 1px,              transparent) 9px  8px,
-			linear-gradient(90deg,              transparent 1px,              transparent) 10px 8px,
-			linear-gradient(90deg,              transparent 1px,              transparent) 4px  9px,
-			linear-gradient(90deg,              transparent 1px,              transparent) 5px  9px,
-			linear-gradient(90deg,              transparent 1px,              transparent) 6px  9px,
-			linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 7px  9px,
-			linear-gradient(90deg,              transparent 1px,              transparent) 8px  9px,
-			linear-gradient(90deg,              transparent 1px,              transparent) 9px  9px,
-			linear-gradient(90deg,              transparent 1px,              transparent) 10px 9px;
-	}
-
-	&:horizontal {
-		&:decrement {
-			--button-img: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAHCAYAAAAvZezQAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsIAAA7CARUoSoAAAAAySURBVBhXTYwBCgAwCAK1///ZZa22gygPkpIwkFTcu4J3iQmGOe8nieywXOrll1vaEjisghAJeJVSAgAAAABJRU5ErkJggg==');
-		}
-
-		&:increment {
-			--button-img: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAHCAYAAAAvZezQAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsIAAA7CARUoSoAAAAAySURBVBhXRY3JDQAwCMOS7r8zxZEAPzgsDkuqhhwewXalayJgZFYohp0Abq2YwxH3RfqHzhAHIWlRxQAAAABJRU5ErkJggg==');
-		}
-	}
+/* Nesting doesn't work here for some reason */
+::-webkit-scrollbar-button:vertical:decrement {
+	background:
+		linear-gradient(90deg,              transparent 1px,              transparent) 4px  6px,
+		linear-gradient(90deg,              transparent 1px,              transparent) 5px  6px,
+		linear-gradient(90deg,              transparent 1px,              transparent) 6px  6px,
+		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 7px  6px,
+		linear-gradient(90deg,              transparent 1px,              transparent) 8px  6px,
+		linear-gradient(90deg,              transparent 1px,              transparent) 9px  6px,
+		linear-gradient(90deg,              transparent 1px,              transparent) 10px 6px,
+		linear-gradient(90deg,              transparent 1px,              transparent) 4px  7px,
+		linear-gradient(90deg,              transparent 1px,              transparent) 5px  7px,
+		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 6px  7px,
+		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 7px  7px,
+		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 8px  7px,
+		linear-gradient(90deg,              transparent 1px,              transparent) 9px  7px,
+		linear-gradient(90deg,              transparent 1px,              transparent) 10px 7px,
+		linear-gradient(90deg,              transparent 1px,              transparent) 4px  8px,
+		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 5px  8px,
+		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 6px  8px,
+		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 7px  8px,
+		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 8px  8px,
+		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 9px  8px,
+		linear-gradient(90deg,              transparent 1px,              transparent) 10px 8px,
+		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 4px  9px,
+		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 5px  9px,
+		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 6px  9px,
+		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 7px  9px,
+		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 8px  9px,
+		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 9px  9px,
+		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 10px 9px;
 }
+
+::-webkit-scrollbar-button:vertical:increment {
+	background:
+		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 4px  6px,
+		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 5px  6px,
+		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 6px  6px,
+		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 7px  6px,
+		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 8px  6px,
+		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 9px  6px,
+		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 10px 6px,
+		linear-gradient(90deg,              transparent 1px,              transparent) 4px  7px,
+		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 5px  7px,
+		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 6px  7px,
+		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 7px  7px,
+		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 8px  7px,
+		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 9px  7px,
+		linear-gradient(90deg,              transparent 1px,              transparent) 10px 7px,
+		linear-gradient(90deg,              transparent 1px,              transparent) 4px  8px,
+		linear-gradient(90deg,              transparent 1px,              transparent) 5px  8px,
+		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 6px  8px,
+		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 7px  8px,
+		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 8px  8px,
+		linear-gradient(90deg,              transparent 1px,              transparent) 9px  8px,
+		linear-gradient(90deg,              transparent 1px,              transparent) 10px 8px,
+		linear-gradient(90deg,              transparent 1px,              transparent) 4px  9px,
+		linear-gradient(90deg,              transparent 1px,              transparent) 5px  9px,
+		linear-gradient(90deg,              transparent 1px,              transparent) 6px  9px,
+		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 7px  9px,
+		linear-gradient(90deg,              transparent 1px,              transparent) 8px  9px,
+		linear-gradient(90deg,              transparent 1px,              transparent) 9px  9px,
+		linear-gradient(90deg,              transparent 1px,              transparent) 10px 9px;
+}
+
+::-webkit-scrollbar-button:horizontal:decrement {
+	background:
+		linear-gradient(90deg,              transparent 1px,              transparent) 5px 4px,
+		linear-gradient(90deg,              transparent 1px,              transparent) 6px 4px,
+		linear-gradient(90deg,              transparent 1px,              transparent) 7px 4px,
+		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 8px 4px,
+		linear-gradient(90deg,              transparent 1px,              transparent) 5px 5px,
+		linear-gradient(90deg,              transparent 1px,              transparent) 6px 5px,
+		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 7px 5px,
+		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 8px 5px,
+		linear-gradient(90deg,              transparent 1px,              transparent) 5px 6px,
+		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 6px 6px,
+		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 7px 6px,
+		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 8px 6px,
+		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 5px 7px,
+		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 6px 7px,
+		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 7px 7px,
+		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 8px 7px,
+		linear-gradient(90deg,              transparent 1px,              transparent) 5px 8px,
+		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 6px 8px,
+		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 7px 8px,
+		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 8px 8px,
+		linear-gradient(90deg,              transparent 1px,              transparent) 5px 9px,
+		linear-gradient(90deg,              transparent 1px,              transparent) 6px 9px,
+		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 7px 9px,
+		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 8px 9px,
+		linear-gradient(90deg,              transparent 1px,              transparent) 5px 10px,
+		linear-gradient(90deg,              transparent 1px,              transparent) 6px 10px,
+		linear-gradient(90deg,              transparent 1px,              transparent) 7px 10px,
+		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 8px 10px;
+}
+
+::-webkit-scrollbar-button:horizontal:increment {
+	background:
+		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 6px 4px,
+		linear-gradient(90deg,              transparent 1px,              transparent) 7px 4px,
+		linear-gradient(90deg,              transparent 1px,              transparent) 8px 4px,
+		linear-gradient(90deg,              transparent 1px,              transparent) 9px 4px,
+		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 6px 5px,
+		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 7px 5px,
+		linear-gradient(90deg,              transparent 1px,              transparent) 8px 5px,
+		linear-gradient(90deg,              transparent 1px,              transparent) 9px 5px,
+		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 6px 6px,
+		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 7px 6px,
+		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 8px 6px,
+		linear-gradient(90deg,              transparent 1px,              transparent) 9px 6px,
+		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 6px 7px,
+		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 7px 7px,
+		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 8px 7px,
+		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 9px 7px,
+		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 6px 8px,
+		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 7px 8px,
+		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 8px 8px,
+		linear-gradient(90deg,              transparent 1px,              transparent) 9px 8px,
+		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 6px 9px,
+		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 7px 9px,
+		linear-gradient(90deg,              transparent 1px,              transparent) 8px 9px,
+		linear-gradient(90deg,              transparent 1px,              transparent) 9px 9px,
+		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) 6px 10px,
+		linear-gradient(90deg,              transparent 1px,              transparent) 7px 10px,
+		linear-gradient(90deg,              transparent 1px,              transparent) 8px 10px,
+		linear-gradient(90deg,              transparent 1px,              transparent) 9px 10px;
+}
+

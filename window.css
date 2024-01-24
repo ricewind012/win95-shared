@@ -10,3 +10,13 @@ body {
 
 	box-sizing: border-box;
 }
+
+.window-resize-handle {
+	position: fixed;
+	right: 4px;
+	bottom: 4px;
+	width: 14px;
+	height: 14px;
+
+	cursor: se-resize;
+}

@@ -115,12 +115,8 @@
 	 * Borders
 	**/
 	--border-statusbar:
-		   0 -1px var(--color-button-shadow),
-		-1px    0 var(--color-button-shadow),
-		-1px -1px var(--color-button-shadow),
-		-1px  1px var(--color-button-highlight),
-		 1px    0 var(--color-button-highlight),
-		 1px  1px var(--color-button-highlight);
+		inset -1px -1px var(--color-button-highlight),
+		inset  1px  1px var(--color-button-shadow);
 
 	--border-button-raised:
 		inset -1px -1px var(--color-button-shadow-dark),

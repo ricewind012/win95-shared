@@ -20,3 +20,15 @@ body {
 
 	cursor: se-resize;
 }
+
+.statusbar {
+	gap: 2px;
+
+	display: flex;
+}
+
+.statusbar-item {
+	box-shadow: var(--border-statusbar);
+
+	padding: 2px 4px 1px 4px;
+}

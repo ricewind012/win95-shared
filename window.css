@@ -1,14 +1,22 @@
 body {
-	background-color: var(--color-button-face);
-	color: var(--color-button-text);
 	font: var(--text-ui);
 	image-rendering: pixelated;
-	box-shadow: var(--border-window);
 
-	padding: 4px;
 	margin: 0;
 
 	box-sizing: border-box;
+}
+
+.window {
+	background-color: var(--color-button-face);
+	color: var(--color-button-text);
+	box-shadow: var(--border-window);
+
+	padding: 4px;
+
+	&.child {
+		padding: 3px;
+	}
 }
 
 .window-resize-handle {

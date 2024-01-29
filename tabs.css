@@ -10,10 +10,11 @@
 		1px 0 var(--color-button-shadow-dark),
 		1px 1px var(--color-tab-border);
 
-	margin: 0 1px -1px 0;
+	margin: 2px 1px -1px 0;
 	padding: 2px 6px;
 
 	position: relative;
+	height: 17px;
 
 	&::before,
 	&::after {
@@ -51,11 +52,18 @@
 	&[aria-selected="true"] {
 		--color-tab-border: var(--color-button-face);
 
-		margin: 0 -1px -2px -4px;
+		margin: 0 -2px -1px -4px;
 		padding: 3px 6px;
 
+		height: unset;
 		z-index: 1;
 	}
+}
+
+[role="tablist"] {
+	margin-left: 4px;
+
+	display: flex;
 }
 
 [role="tabpanel"] {
@@ -63,7 +71,7 @@
 	color: var(--color-window-text);
 	box-shadow: var(--border-button-raised);
 
-	padding: 4px;
+	padding: 14px;
 
 	box-sizing: border-box;
 }

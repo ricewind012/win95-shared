@@ -3,6 +3,8 @@ table {
 	border-spacing: 4px;
 	border: none;
 	box-shadow: var(--border-field);
+
+	padding: 2px;
 }
 
 .table-button {

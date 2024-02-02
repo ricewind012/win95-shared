@@ -84,6 +84,35 @@ input:where([type="button"], [type="submit"]) {
 	}
 }
 
+.icon-button {
+	padding: 0;
+	margin: 0;
+
+	position: relative;
+	min-width: 23px;
+	height: 22px;
+
+	&:active,
+	&[selected] {
+		background-image: repeating-conic-gradient(
+			var(--color-scrollbar) 0% 25%,
+			var(--color-window) 0% 50%
+		);
+		background-size: 2px 2px;
+		box-shadow: var(--border-button-sunken);
+	}
+
+	&::before {
+		content: '';
+
+		background: var(--button-img) no-repeat;
+		background-position: var(--button-img-pos, center);
+
+		position: absolute;
+		inset: 0;
+	}
+}
+
 input {
 	&[type="checkbox"],
 	&[type="radio"] {

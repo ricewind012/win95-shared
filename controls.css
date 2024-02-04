@@ -14,7 +14,8 @@ fieldset {
 	box-shadow: var(--border-groupbox-box-shadow);
 
 	padding: 12px 11px 11px 6px;
-	margin: 0 0 8px 0;
+	margin: 0;
+	margin-bottom: 8px;
 
 	position: relative;
 }
@@ -29,6 +30,7 @@ textarea {
 	border: none;
 	border-radius: 0;
 
+	position: relative;
 	height: 21px;
 	box-sizing: border-box;
 
@@ -39,11 +41,6 @@ textarea {
 		text-shadow: 1px 1px var(--color-button-highlight);
 
 		pointer-events: none;
-	}
-
-	&:focus {
-		outline: dotted 1px var(--color-button-text);
-		outline-offset: -4px;
 	}
 }
 
@@ -62,7 +59,6 @@ input:where(
 	box-shadow: var(--border-field);
 
 	padding: 4px;
-	margin: 0 2px;
 }
 
 button,
@@ -73,22 +69,21 @@ input:where([type="button"], [type="submit"]) {
 	box-shadow: var(--border-button-raised);
 
 	padding: 5px;
-	margin: 0 3px;
 
-	position: relative;
 	min-width: 74px;
 	height: unset;
 
 	&:active {
 		box-shadow: var(--border-button-sunken);
 	}
+
+	&:focus {
+		outline: dotted 1px var(--color-button-text);
+		outline-offset: -4px;
+	}
 }
 
 .icon-button {
-	padding: 0;
-	margin: 0;
-
-	position: relative;
 	min-width: 23px;
 	height: 22px;
 
@@ -116,10 +111,6 @@ input:where([type="button"], [type="submit"]) {
 input {
 	&[type="checkbox"],
 	&[type="radio"] {
-		margin: 0;
-
-		position: relative;
-
 		&:active,
 		&:disabled {
 			background-color: var(--color-button-face);
@@ -234,15 +225,8 @@ select {
 	background-size: 1px 1px;
 
 	padding: 0;
+	padding-left: 4px;
 	padding-right: 20px;
-
-	@supports not (-moz-appearance: none) {
-		padding-left: 4px;
-	}
-
-	&:focus {
-		outline: none; /* unable to do right side, as it conflicts with the button */
-	}
 }
 
 progress {

@@ -1,0 +1,33 @@
+.list-item {
+	width: max-content;
+	/* alternative -webkit-line-clamp */
+	height: calc(var(--text-size) * var(--text-line) + 3px);
+	display: flex;
+	align-items: center;
+}
+
+.list-item-image {
+	background: var(--list-icon) center no-repeat;
+
+	min-width: var(--icon-size);
+	min-height: var(--icon-size);
+}
+
+.list-item-name-container {
+	display: flex;
+	align-items: center;
+}
+
+.list-item-name {
+	padding: 1px 5px 0 1px;
+
+	/* TODO: make it layout-independent */
+	.list-item[selected] > .list-item-name-container > & {
+		background-color: var(--color-highlight);
+		color: var(--color-highlight-text);
+
+		/* TODO: wtf is this color */
+		border: 1px dotted #ff0;
+	}
+}
+

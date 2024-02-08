@@ -29,6 +29,24 @@ body {
 	cursor: se-resize;
 }
 
+.menubar {
+	background-color: var(--color-menubar);
+	color: var(--color-menubar-text);
+	line-height: 1;
+
+	display: flex;
+}
+
+.menubar-item {
+	padding: 4px 5px 3px 7px;
+
+	&:active,
+	&[selected] {
+		background-color: var(--color-highlight);
+		color: var(--color-highlight-text);
+	}
+}
+
 .statusbar {
 	gap: 2px;
 

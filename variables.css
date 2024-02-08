@@ -4,6 +4,9 @@
 	 *
 	 * Naming reference: https://learn.microsoft.com/en-us/windows/win32/controls/themesfileformat-overview#control-panelcolors-section
 	**/
+	--color-menubar: var(--color-button-face);
+	--color-menubar-text: var(--color-button-text);
+
 	@media (prefers-color-scheme: light) {
 		--color-button-face:         #c0c0c0;
 		--color-button-text:         #000;

@@ -1,4 +1,6 @@
 .menu-entry {
+	line-height: 1.25;
+
 	padding: 2px 20px;
 
 	position: relative;
@@ -64,5 +66,6 @@
 	&:hover {
 		--color-button-text: var(--color-highlight-text);
 		background-color: var(--color-highlight);
+		color: var(--color-highlight-text);
 	}
 }

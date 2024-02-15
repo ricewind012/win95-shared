@@ -9,8 +9,8 @@
 	&::before {
 		content: '';
 
-		border-left: 1px dotted var(--color-tree-border);
-		border-bottom: 1px dotted var(--color-tree-border);
+		border-left: 1px dotted var(--color-gray-text);
+		border-bottom: 1px dotted var(--color-gray-text);
 
 		position: absolute;
 		left: -12px;
@@ -25,7 +25,7 @@
 		&::after {
 			content: '';
 
-			border-left: 1px dotted var(--color-tree-border);
+			border-left: 1px dotted var(--color-gray-text);
 
 			position: absolute;
 			left: -12px;
@@ -54,7 +54,7 @@
 		background-color: var(--color-window);
 		background-size: 1px 1px;
 		background-repeat: no-repeat;
-		border: 1px solid var(--color-tree-border);
+		border: 1px solid var(--color-gray-text);
 
 		width: calc(var(--icon-size) - 2px);
 		height: calc(var(--icon-size) - 2px);
@@ -62,8 +62,8 @@
 	}
 
 	&::after {
-		border-left: 1px dotted var(--color-tree-border);
-		border-bottom: 1px dotted var(--color-tree-border);
+		border-left: 1px dotted var(--color-gray-text);
+		border-bottom: 1px dotted var(--color-gray-text);
 
 		left: 4px;
 		top: -10px;

@@ -16,8 +16,6 @@ fieldset {
 	padding: 12px 11px 11px 6px;
 	margin: 0;
 	margin-bottom: 8px;
-
-	position: relative;
 }
 
 input,
@@ -28,11 +26,9 @@ textarea {
 	outline: none;
 	font: var(--text-ui);
 	border: none;
-	border-radius: 0;
 
 	position: relative;
 	height: 21px;
-	box-sizing: border-box;
 
 	&:disabled {
 		--color-window: var(--color-button-face);

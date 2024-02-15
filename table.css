@@ -14,10 +14,6 @@ table {
 	white-space: nowrap;
 
 	padding: 2px 7px;
-	margin: 0;
-
-	position: relative;
-	width: 100%;
 
 	&[sort]:not([sort="none"])::after {
 		content: '';

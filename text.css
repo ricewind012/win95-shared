@@ -13,24 +13,17 @@ kbd {
 	font: var(--text-monospace);
 }
 
-td {
-	font: var(--text-ui);
-}
-
 legend {
 	background-color: var(--color-button-face);
-	font: var(--text-ui);
 }
 
 label {
-	text-decoration: none;
 	gap: 7px;
 
 	display: inline-flex;
 	align-items: center;
 
 	position: relative;
-	cursor: default;
 
 	&:has(:focus)::before {
 		content: '';

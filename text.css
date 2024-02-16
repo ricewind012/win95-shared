@@ -28,7 +28,7 @@ label {
 	&:has(:focus)::before {
 		content: '';
 		position: absolute;
-		left: 17px;
+		left: 19px;
 		right: -3px;
 		height: 100%;
 

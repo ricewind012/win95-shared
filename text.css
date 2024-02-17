@@ -18,9 +18,9 @@ legend {
 }
 
 label {
-	gap: 7px;
+	gap: 6px;
 
-	display: inline-flex;
+	display: flex;
 	align-items: center;
 
 	position: relative;

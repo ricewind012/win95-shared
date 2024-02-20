@@ -103,6 +103,10 @@ input:where([type="button"], [type="submit"]) {
 
 		position: absolute;
 		inset: 0;
+
+		@media (prefers-color-scheme: dark) {
+			filter: invert();
+		}
 	}
 }
 

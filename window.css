@@ -59,6 +59,56 @@ body {
 	padding: 2px 4px 1px 4px;
 }
 
+.titlebar {
+	background-color: var(--color-active-caption);
+	color: var(--color-active-caption-text);
+
+	padding: 1px 2px;
+	gap: 4px;
+
+	height: var(--titlebar-height);
+	display: flex;
+	align-items: center;
+
+	:root:not([focused]) & {
+		background-color: var(--color-inactive-caption);
+	}
+}
+
+.titlebar-name {
+	font-weight: bold;
+}
+
+.titlebar-button {
+	min-width: 16px;
+	height: 14px;
+
+	&::before,
+	&::after {
+		content: '';
+
+		-webkit-mask: var(--button-img, none) no-repeat;
+		-webkit-mask-size: var(--button-img-size, auto auto);
+		-webkit-mask-position: var(--button-img-pos, center);
+
+		position: absolute;
+		inset: 0;
+	}
+
+	&::before {
+		background-color: var(--color-button-text);
+
+		z-index: 1;
+	}
+
+	&:disabled::after {
+		background-color: var(--color-button-highlight);
+
+		left: 1px;
+		top: 1px;
+	}
+}
+
 .toolbar {
 	gap: 8px;
 

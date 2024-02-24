@@ -15,10 +15,10 @@ table {
 
 	padding: 2px 7px;
 
-	&[sort]:not([sort="none"])::after {
+	&::after {
 		content: '';
 
-		background-color: var(--color-button-text);
+		background-color: var(--color-to-change);
 		-webkit-mask: var(--button-img, none) no-repeat;
 		-webkit-mask-size: 7px 4px;
 		-webkit-mask-position: center;
@@ -28,6 +28,10 @@ table {
 		right: 7px;
 		width: 7px;
 		height: 100%;
+	}
+
+	&[sort] {
+		--color-to-change: var(--color-button-text);
 	}
 
 	&[sort="ascending"] {

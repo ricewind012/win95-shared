@@ -44,14 +44,12 @@ textarea {
 
 select,
 textarea,
-input:where(
-	:not([type]),
-	[type="url"],
-	[type="text"],
-	[type="number"],
-	[type="search"],
-	[type="password"]
-) {
+input:not([type]),
+input[type="url"],
+input[type="text"],
+input[type="number"],
+input[type="search"],
+input[type="password"] {
 	background-color: var(--color-window);
 	color: var(--color-window-text);
 	box-shadow: var(--border-field);

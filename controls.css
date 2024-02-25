@@ -147,17 +147,13 @@ input {
 	}
 
 	&[type="number"] {
-		padding: 0;
-		padding-left: 4px;
-
 		&::-webkit-inner-spin-button {
 			appearance: none;
 			opacity: 1;
 			background: var(--button-img);
 			background-repeat: no-repeat;
 			background-size: 1px 1px;
-			margin-top: -1px;
-			margin-right: 2px;
+			margin-right: -2px;
 
 			width: 17px;
 			height: 18px;
@@ -205,8 +201,6 @@ select {
 	background-color: var(--color-window);
 	background-repeat: no-repeat;
 	background-size: 1px 1px;
-	padding: 0;
-	padding-left: 4px;
 	padding-right: 20px;
 }
 

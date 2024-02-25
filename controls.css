@@ -16,6 +16,21 @@ fieldset {
 	margin-bottom: 8px;
 }
 
+fieldset,
+input,
+button,
+select,
+textarea {
+	&:disabled {
+		--color-window: var(--color-button-face);
+		--color-window-text: var(--color-gray-text);
+		--color-button-text: var(--color-button-shadow);
+		text-shadow: 1px 1px var(--color-button-highlight);
+
+		pointer-events: none;
+	}
+}
+
 input,
 button,
 select,
@@ -28,15 +43,6 @@ textarea {
 
 	position: relative;
 	height: 21px;
-
-	&:disabled {
-		--color-window: var(--color-button-face);
-		--color-window-text: var(--color-gray-text);
-		--color-button-text: var(--color-button-shadow);
-		text-shadow: 1px 1px var(--color-button-highlight);
-
-		pointer-events: none;
-	}
 }
 
 select,

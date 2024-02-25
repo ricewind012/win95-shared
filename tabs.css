@@ -9,7 +9,6 @@
 	box-shadow:
 		1px 0 var(--color-button-shadow-dark),
 		1px 1px var(--color-tab-border);
-
 	margin: 2px 1px -1px 0;
 	padding: 3px 4px 2px 6px;
 
@@ -21,6 +20,11 @@
 	&::after {
 		content: '';
 
+		position: absolute;
+		top: -1px;
+		width: 3px;
+		height: 2px;
+
 		/* Draw the rounding pixel by pixel */
 		background-repeat: no-repeat;
 		background-size: 1px 1px;
@@ -31,23 +35,18 @@
 			0   1px,
 			1px 1px,
 			2px 1px;
-
-		position: absolute;
-		top: -1px;
-		width: 3px;
-		height: 2px;
 	}
 
 	&::before {
-		background-image: var(--tab-border-left);
-
 		left: -1px;
+
+		background-image: var(--tab-border-left);
 	}
 
 	&::after {
-		background-image: var(--tab-border-right);
-
 		right: -2px;
+
+		background-image: var(--tab-border-right);
 	}
 
 	&[aria-selected="true"] {
@@ -72,6 +71,5 @@
 	background-color: var(--color-button-face);
 	color: var(--color-window-text);
 	box-shadow: var(--border-button-raised);
-
 	padding: 14px;
 }

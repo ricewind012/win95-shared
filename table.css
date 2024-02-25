@@ -3,7 +3,6 @@ table {
 	border-spacing: 4px;
 	border: none;
 	box-shadow: var(--border-field);
-
 	padding: 2px;
 }
 
@@ -12,22 +11,21 @@ table {
 	text-align: left;
 	text-overflow: ellipsis;
 	white-space: nowrap;
-
 	padding: 2px 7px;
 
 	&::after {
 		content: '';
-
-		background-color: var(--color-to-change);
-		-webkit-mask: var(--button-img, none) no-repeat;
-		-webkit-mask-size: 7px 4px;
-		-webkit-mask-position: center;
 
 		position: absolute;
 		top: -1px;
 		right: 7px;
 		width: 7px;
 		height: 100%;
+
+		background-color: var(--color-to-change);
+		-webkit-mask: var(--button-img, none) no-repeat;
+		-webkit-mask-size: 7px 4px;
+		-webkit-mask-position: center;
 	}
 
 	&[sort] {

@@ -1,7 +1,6 @@
 body {
 	font: var(--text-ui);
 	image-rendering: pixelated;
-
 	margin: 0;
 
 	box-sizing: border-box;
@@ -11,7 +10,6 @@ body {
 	background-color: var(--color-button-face);
 	color: var(--color-button-text);
 	box-shadow: var(--border-window);
-
 	padding: 4px;
 
 	&.child {
@@ -55,14 +53,12 @@ body {
 
 .statusbar-item {
 	box-shadow: var(--border-statusbar);
-
 	padding: 2px 4px 1px 4px;
 }
 
 .titlebar {
 	background-color: var(--color-active-caption);
 	color: var(--color-active-caption-text);
-
 	padding: 1px 2px;
 	gap: 4px;
 
@@ -87,25 +83,25 @@ body {
 	&::after {
 		content: '';
 
+		position: absolute;
+		inset: 0;
+
 		-webkit-mask: var(--button-img, none) no-repeat;
 		-webkit-mask-size: var(--button-img-size, auto auto);
 		-webkit-mask-position: var(--button-img-pos, center);
-
-		position: absolute;
-		inset: 0;
 	}
 
 	&::before {
-		background-color: var(--color-button-text);
-
 		z-index: 1;
+
+		background-color: var(--color-button-text);
 	}
 
 	&:disabled::after {
-		background-color: var(--color-button-highlight);
-
 		left: 1px;
 		top: 1px;
+
+		background-color: var(--color-button-highlight);
 	}
 }
 

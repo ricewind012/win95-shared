@@ -2,7 +2,6 @@ hr {
 	border: none;
 	border-top: 1px solid var(--color-button-highlight);
 	box-shadow: 0 -1px var(--color-button-shadow);
-
 	margin-top: 3px;
 	margin-bottom: 4px;
 }
@@ -12,7 +11,6 @@ fieldset {
 	border-color: var(--border-groupbox-border);
 	border-radius: 0;
 	box-shadow: var(--border-groupbox-box-shadow);
-
 	padding: 12px 9px 11px 8px;
 	margin: 0;
 	margin-bottom: 8px;
@@ -26,7 +24,6 @@ textarea {
 	outline: none;
 	font: var(--text-ui);
 	border: none;
-
 	margin: 0;
 
 	position: relative;
@@ -53,7 +50,6 @@ input[type="password"] {
 	background-color: var(--color-window);
 	color: var(--color-window-text);
 	box-shadow: var(--border-field);
-
 	padding: 4px;
 }
 
@@ -63,7 +59,6 @@ input:where([type="button"], [type="submit"]) {
 	color: var(--color-button-text);
 	text-align: center;
 	box-shadow: var(--border-button-raised);
-
 	padding: 5px;
 
 	min-width: 75px;
@@ -96,11 +91,11 @@ input:where([type="button"], [type="submit"]) {
 	&::before {
 		content: '';
 
-		background: var(--button-img) no-repeat;
-		background-position: var(--button-img-pos, center);
-
 		position: absolute;
 		inset: 0;
+
+		background: var(--button-img) no-repeat;
+		background-position: var(--button-img-pos, center);
 
 		@media (prefers-color-scheme: dark) {
 			filter: invert();
@@ -125,13 +120,13 @@ input {
 			&::before {
 				content: '';
 
+				position: absolute;
+				inset: 0;
+
 				-webkit-mask: var(--control-img) no-repeat;
 				-webkit-mask-size: var(--control-img-size);
 				-webkit-mask-position: var(--control-img-pos);
 				background-color: var(--color-button-text);
-
-				position: absolute;
-				inset: 0;
 			}
 		}
 	}
@@ -161,7 +156,6 @@ input {
 			background: var(--button-img);
 			background-repeat: no-repeat;
 			background-size: 1px 1px;
-
 			margin-top: -1px;
 			margin-right: 2px;
 
@@ -172,7 +166,6 @@ input {
 
 	&[type="range"] {
 		background-color: transparent;
-
 		padding: 8px 4px 12px 4px;
 		margin: -4px;
 
@@ -180,7 +173,6 @@ input {
 
 		&::-webkit-slider-runnable-track {
 			box-shadow: var(--border-field);
-
 			margin: 4px;
 
 			height: 0;
@@ -192,7 +184,6 @@ input {
 			background: var(--control-img);
 			border: none;
 			border-radius: 0;
-
 			margin: -4px;
 
 			width: 11px;
@@ -214,7 +205,6 @@ select {
 	background-color: var(--color-window);
 	background-repeat: no-repeat;
 	background-size: 1px 1px;
-
 	padding: 0;
 	padding-left: 4px;
 	padding-right: 20px;
@@ -223,7 +213,6 @@ select {
 progress {
 	appearance: none;
 	box-shadow: var(--border-statusbar);
-
 	padding: 1px;
 
 	block-size: 12px;

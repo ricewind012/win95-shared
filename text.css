@@ -22,11 +22,11 @@ label {
 
 	display: flex;
 	align-items: center;
-
 	position: relative;
 
 	&:has(:focus)::before {
 		content: '';
+
 		position: absolute;
 		left: 19px;
 		right: -3px;

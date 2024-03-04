@@ -40,3 +40,11 @@ table {
 		--button-img: var(--icon-arrow-top);
 	}
 }
+
+.table-header-row {
+	box-shadow:
+		inset -1px -1px var(--color-button-highlight),
+		inset -2px -2px var(--color-button-shadow);
+	padding: 2px 5px;
+	padding-bottom: 3px;
+}

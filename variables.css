@@ -130,6 +130,11 @@
 		inset  1px  1px var(--color-button-shadow-dark),
 		inset -2px -2px var(--color-button-light),
 		inset  2px  2px var(--color-button-shadow);
+	--border-button-focused:
+		inset -2px -2px var(--color-button-shadow-dark),
+		inset  1px  1px var(--color-button-shadow-dark),
+		inset  2px  2px var(--color-button-highlight),
+		inset -3px -3px var(--color-button-shadow);
 
 	--border-scrollbar-button-raised:
 		inset -1px -1px var(--color-button-shadow-dark),

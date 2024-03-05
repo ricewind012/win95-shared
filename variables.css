@@ -88,28 +88,31 @@
 	/**
 	 * Text
 	 *
-	 * I.   Fallback fonts shipped with Windows 95
+	 * I.   Fallback fonts shipped with Windows 95.
 	 *      Used in the first place due to
-	 *      rendering issues on Linux.
+	 *      rendering issues on Linux (UI)
+	 *      & not looking dumb (monospace).
 	 * II.  Normal
 	 * III. System
 	**/
-	--text-font-ui:
+	--text-line:           1.2;
+
+	--text-header-size:    16pt;
+	--text-header:         var(--text-header-size) / var(--text-line) var(--text-ui-font);
+
+	--text-ui-font:
 		'Tahoma', 'Arial', 'Verdana',
 		'MS Sans Serif', 'MS Reference Sans Serif',
 		sans-serif;
-	--text-font-monospace:
-		'Less Perfect DOS VGA',
+	--text-ui-size:        8pt;
+	--text-ui:             var(--text-ui-size) / var(--text-line) var(--text-ui-font);
+
+	--text-monospace-font:
 		'MS Gothic', 'MS Mincho', 'SimSun',
+		'Less Perfect DOS VGA',
 		monospace;
-
-	--text-size:        8pt;
-	--text-size-header: 16pt;
-	--text-line:        1.2;
-
-	--text-ui:          var(--text-size)        / var(--text-line) var(--text-font-ui);
-	--text-monospace:   var(--text-size)        / var(--text-line) var(--text-font-monospace);
-	--text-header:      var(--text-size-header) / var(--text-line) var(--text-font-ui);
+	--text-monospace-size: 9pt;
+	--text-monospace:      var(--text-monospace-size) / var(--text-line) var(--text-monospace-font);
 
 	/**
 	 * Borders

@@ -150,18 +150,13 @@
 		inset -2px -2px var(--color-button-light),
 		inset  2px  2px var(--color-button-shadow-dark);
 
-	--border-groupbox-border:
-		var(--color-button-highlight)
-		var(--color-button-shadow)
-		var(--color-button-shadow)
-		var(--color-button-highlight);
-	--border-groupbox-box-shadow:
-		   0 -1px var(--color-button-shadow),
-		-1px    0 var(--color-button-shadow),
-		-1px -1px var(--color-button-shadow),
-		-1px  1px var(--color-button-highlight),
-		 1px    0 var(--color-button-highlight),
-		 1px  1px var(--color-button-highlight);
+	--border-groupbox:
+		inset    0    0 0 1px var(--color-button-shadow),
+		inset  2px    0       var(--color-button-highlight),
+		inset    0  2px       var(--color-button-highlight),
+		         0  1px       var(--color-button-highlight),
+		       1px    0       var(--color-button-highlight),
+		       1px  1px       var(--color-button-highlight);
 
 	--border-tab:
 		var(--color-button-highlight)

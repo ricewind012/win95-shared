@@ -7,11 +7,9 @@ hr {
 }
 
 fieldset {
-	border: 1px solid;
-	border-color: var(--border-groupbox-border);
-	border-radius: 0;
-	box-shadow: var(--border-groupbox-box-shadow);
-	padding: 12px 9px 11px 8px;
+	border: none;
+	box-shadow: var(--border-groupbox);
+	padding: 11px 9px;
 	margin: 0;
 	margin-bottom: 8px;
 }

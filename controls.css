@@ -76,6 +76,8 @@ input:where([type="button"], [type="submit"]) {
 	}
 
 	&:active {
+		color: transparent;
+		text-shadow: 1px 1px var(--color-button-text);
 		box-shadow: var(--border-button-sunken);
 	}
 }
@@ -92,6 +94,10 @@ input:where([type="button"], [type="submit"]) {
 		);
 		background-size: 2px 2px;
 		box-shadow: var(--border-button-sunken);
+
+		&::before {
+			inset: 1px;
+		}
 	}
 
 	&::before {

@@ -268,7 +268,7 @@ progress {
 }
 
 ::-webkit-scrollbar-button:active {
-	box-shadow: var(--border-scrollbar-button-sunken);
+	box-shadow: var(--border-button-sunken-alt);
 }
 
 ::-webkit-scrollbar-corner,

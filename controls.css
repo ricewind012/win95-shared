@@ -19,10 +19,13 @@ input,
 button,
 select,
 textarea {
+	--color-arrow-shadow: var(--color-button-face);
+
 	&:disabled {
 		--color-window: var(--color-button-face);
 		--color-window-text: var(--color-gray-text);
 		--color-button-text: var(--color-button-shadow);
+		--color-arrow-shadow: var(--color-button-highlight);
 		text-shadow: 1px 1px var(--color-button-highlight);
 
 		pointer-events: none;
@@ -173,8 +176,15 @@ input {
 	}
 
 	&[type="range"] {
+		--color-to-change: var(--color-button-face);
+
 		background-color: transparent;
 		margin: 0 4px;
+
+		&:active,
+		&:disabled {
+			--color-to-change: var(--color-button-highlight);
+		}
 
 		&::-webkit-slider-runnable-track {
 			box-shadow: var(--border-field);
@@ -183,8 +193,6 @@ input {
 		}
 
 		&::-webkit-slider-thumb {
-			--color-to-change: var(--color-button-face);
-
 			appearance: none;
 			background: var(--control-img);
 			background-repeat: no-repeat;
@@ -195,14 +203,11 @@ input {
 			width: 11px;
 			height: 21px;
 		}
-
-		&::-webkit-slider-thumb:active {
-			--color-to-change: var(--color-button-highlight);
-		}
 	}
 }
 
 select {
+	opacity: 1;
 	background: var(--control-img);
 	background-color: var(--color-window);
 	background-repeat: no-repeat;

@@ -21,7 +21,7 @@
 				width: 7px;
 				height: 7px;
 
-				-webkit-mask: url('data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNyA3IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjMiIHg9IjYiLz48cmVjdCB3aWR0aD0iMSIgaGVpZ2h0PSIzIiB4PSI1IiB5PSIxIi8+PHJlY3Qgd2lkdGg9IjEiIGhlaWdodD0iMyIgeD0iNCIgeT0iMiIvPjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjMiIHg9IjMiIHk9IjMiLz48cmVjdCB3aWR0aD0iMSIgaGVpZ2h0PSIzIiB4PSIyIiB5PSI0Ii8+PHJlY3Qgd2lkdGg9IjEiIGhlaWdodD0iMyIgeD0iMSIgeT0iMyIvPjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjMiIHk9IjIiLz48L3N2Zz4K');
+				-webkit-mask: var(--icon-checkmark);
 			}
 		}
 

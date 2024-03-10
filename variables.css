@@ -173,6 +173,8 @@
 	/**
 	 * Dimensions
 	**/
+	--border-size:      2px;
+	--window-spacing:   2px;
 	--window-gap:       2px;
 
 	--scrollbar-size:   16px;
@@ -182,4 +184,12 @@
 	--statusbar-height: 18px;
 
 	--icon-size:        16px;
+
+	/**
+	 * Other
+	**/
+	--checkerboard: repeating-conic-gradient(
+		var(--color-window) 0% 25%,
+		var(--color-scrollbar) 0% 50%
+	) 0% 0% / 2px 2px;
 }

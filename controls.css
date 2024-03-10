@@ -36,6 +36,8 @@ input,
 button,
 select,
 textarea {
+	--input-spacing: 2px;
+
 	appearance: none;
 	outline: none;
 	font: var(--text-ui);
@@ -43,7 +45,7 @@ textarea {
 	margin: 0;
 
 	position: relative;
-	height: 21px;
+	height: calc(var(--border-size) * 2 + 17px);
 }
 
 select,
@@ -57,7 +59,7 @@ input[type="password"] {
 	background-color: var(--color-window);
 	color: var(--color-window-text);
 	box-shadow: var(--border-field);
-	padding: 4px;
+	padding: calc(var(--border-size) + var(--input-spacing));
 }
 
 button,
@@ -89,11 +91,7 @@ input:where([type="button"], [type="submit"]) {
 
 	&:active,
 	&[selected] {
-		background-image: repeating-conic-gradient(
-			var(--color-scrollbar) 0% 25%,
-			var(--color-window) 0% 50%
-		);
-		background-size: 2px 2px;
+		background: var(--checkerboard);
 		box-shadow: var(--border-button-sunken);
 
 		&::before {
@@ -150,7 +148,7 @@ input {
 		background-color: var(--color-to-change);
 		box-shadow: var(--border-field);
 
-		--control-img: url('data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNyA3IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjMiIHg9IjYiLz48cmVjdCB3aWR0aD0iMSIgaGVpZ2h0PSIzIiB4PSI1IiB5PSIxIi8+PHJlY3Qgd2lkdGg9IjEiIGhlaWdodD0iMyIgeD0iNCIgeT0iMiIvPjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjMiIHg9IjMiIHk9IjMiLz48cmVjdCB3aWR0aD0iMSIgaGVpZ2h0PSIzIiB4PSIyIiB5PSI0Ii8+PHJlY3Qgd2lkdGg9IjEiIGhlaWdodD0iMyIgeD0iMSIgeT0iMyIvPjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjMiIHk9IjIiLz48L3N2Zz4K');
+		--control-img: var(--icon-checkmark);
 		--control-img-size: 7px 7px;
 		--control-img-pos: 3px 3px;
 	}
@@ -168,7 +166,7 @@ input {
 			background: var(--button-img);
 			background-repeat: no-repeat;
 			background-size: 1px 1px;
-			margin-right: -2px;
+			margin-right: calc(var(--border-size) * -1);
 
 			width: 17px;
 			height: 18px;
@@ -189,7 +187,7 @@ input {
 		&::-webkit-slider-runnable-track {
 			box-shadow: var(--border-field);
 
-			height: 4px;
+			height: calc(var(--border-size) * 2);
 		}
 
 		&::-webkit-slider-thumb {
@@ -198,7 +196,7 @@ input {
 			background-repeat: no-repeat;
 			background-size: 1px 1px;
 			margin: -4px;
-			margin-top: -7px;
+			margin-top: calc(var(--border-size) * -2 - 3px);
 
 			width: 11px;
 			height: 21px;
@@ -212,7 +210,7 @@ select {
 	background-color: var(--color-window);
 	background-repeat: no-repeat;
 	background-size: 1px 1px;
-	padding-right: 20px;
+	padding-right: calc(var(--border-size) + var(--input-spacing) + 16px);
 }
 
 progress {
@@ -239,11 +237,7 @@ progress {
 }
 
 ::-webkit-scrollbar {
-	background-image: repeating-conic-gradient(
-		var(--color-scrollbar) 0% 25%,
-		var(--color-window) 0% 50%
-	);
-	background-size: 2px 2px;
+	background: var(--checkerboard);
 }
 
 ::-webkit-scrollbar,

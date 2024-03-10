@@ -10,17 +10,17 @@ body {
 	background-color: var(--color-button-face);
 	color: var(--color-button-text);
 	box-shadow: var(--border-window);
-	padding: 4px;
+	padding: calc(var(--border-size) + var(--window-spacing));
 
 	&.child {
-		padding: 3px;
+		--window-spacing: 1px;
 	}
 }
 
 .window-resize-handle {
 	position: fixed;
-	right: 4px;
-	bottom: 4px;
+	right: calc(var(--border-size) + var(--window-spacing));
+	bottom: calc(var(--border-size) + var(--window-spacing));
 	width: 14px;
 	height: 14px;
 

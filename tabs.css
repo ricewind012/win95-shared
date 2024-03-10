@@ -71,5 +71,5 @@
 	background-color: var(--color-button-face);
 	color: var(--color-window-text);
 	box-shadow: var(--border-button-raised);
-	padding: 14px;
+	padding: calc(var(--border-size) + 12px);
 }

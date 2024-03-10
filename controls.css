@@ -9,7 +9,7 @@ hr {
 fieldset {
 	border: none;
 	box-shadow: var(--border-groupbox);
-	padding: 11px 9px;
+	padding: 11px;
 	margin: 0;
 	margin-bottom: 8px;
 }
@@ -45,7 +45,6 @@ textarea {
 	margin: 0;
 
 	position: relative;
-	height: calc(var(--border-size) * 2 + 17px);
 }
 
 select,
@@ -60,28 +59,32 @@ input[type="password"] {
 	color: var(--color-window-text);
 	box-shadow: var(--border-field);
 	padding: calc(var(--border-size) + var(--input-spacing));
+
+	/* TODO: hardcode until there is a way to round calculations */
+	height: 21px;
 }
 
 button,
 input:where([type="button"], [type="submit"]) {
+	--button-spacing: 5px;
+
 	background-color: var(--color-button-face);
 	color: var(--color-button-text);
 	box-shadow: var(--border-button-raised);
-	padding: 5px;
+	padding: var(--button-spacing);
 
 	min-width: 75px;
-	height: unset;
-
-	&:focus {
-		outline: dotted 1px var(--color-button-text);
-		outline-offset: -5px;
-		box-shadow: var(--border-button-focused);
-	}
 
 	&:active {
 		color: transparent;
 		text-shadow: 1px 1px var(--color-button-text);
 		box-shadow: var(--border-button-sunken);
+	}
+
+	&:focus {
+		outline: dotted 1px var(--color-button-text);
+		outline-offset: calc(var(--button-spacing) * -1);
+		box-shadow: var(--border-button-focused);
 	}
 }
 
@@ -177,7 +180,6 @@ input {
 		--color-to-change: var(--color-button-face);
 
 		background-color: transparent;
-		margin: 0 4px;
 
 		&:active,
 		&:disabled {
@@ -195,7 +197,6 @@ input {
 			background: var(--control-img);
 			background-repeat: no-repeat;
 			background-size: 1px 1px;
-			margin: -4px;
 			margin-top: calc(var(--border-size) * -2 - 3px);
 
 			width: 11px;
@@ -210,7 +211,8 @@ select {
 	background-color: var(--color-window);
 	background-repeat: no-repeat;
 	background-size: 1px 1px;
-	padding-right: calc(var(--border-size) + var(--input-spacing) + 16px);
+	/* TODO: hardcode until there is a way to calculate the above */
+	padding-right: calc(2px + var(--input-spacing) + 16px);
 }
 
 progress {

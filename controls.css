@@ -253,12 +253,16 @@ progress {
 }
 
 ::-webkit-scrollbar-button {
+	--offset: 0px;
+
 	background-color: var(--color-button-face) !important;
 	background-repeat: no-repeat !important;
 	background-size: 1px 1px !important;
 }
 
 ::-webkit-scrollbar-button:active {
+	--offset: 1px;
+
 	box-shadow: var(--border-button-sunken-alt);
 }
 

@@ -13,6 +13,7 @@ kbd {
 	font: var(--text-monospace);
 }
 
+/* <fieldset> does not use the border property, so this is needed. */
 legend {
 	background-color: var(--color-button-face);
 }
@@ -23,15 +24,4 @@ label {
 	display: flex;
 	align-items: center;
 	position: relative;
-
-	&:has(:focus)::before {
-		content: '';
-
-		position: absolute;
-		left: 19px;
-		right: -3px;
-		height: 100%;
-
-		outline: dotted 1px var(--color-button-text);
-	}
 }

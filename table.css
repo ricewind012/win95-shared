@@ -1,9 +1,6 @@
 table {
-	background-color: var(--color-window);
 	border-spacing: 4px;
 	border: none;
-	box-shadow: var(--border-field);
-	padding: var(--border-size);
 }
 
 .table-button {

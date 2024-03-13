@@ -1,9 +1,3 @@
-.content-container {
-	background-color: var(--color-window);
-	box-shadow: var(--border-field);
-	padding: var(--border-size);
-}
-
 .list-item {
 	/* alternative -webkit-line-clamp */
 	height: calc(var(--text-size) * var(--text-line) + 3px);

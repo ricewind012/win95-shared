@@ -114,3 +114,9 @@ body {
 
 	display: flex;
 }
+
+.content-container {
+	background-color: var(--color-window);
+	box-shadow: var(--border-field);
+	padding: var(--border-size);
+}

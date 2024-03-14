@@ -97,15 +97,19 @@ body {
 		background-color: var(--color-button-text);
 	}
 
-	&:active::before {
-		inset: 1px;
+	&:active {
+		&::before {
+			inset: 1px;
+		}
 	}
 
-	&:disabled::after {
-		left: 1px;
-		top: 1px;
+	&:disabled {
+		&::after {
+			left: 1px;
+			top: 1px;
 
-		background-color: var(--color-button-highlight);
+			background-color: var(--color-button-highlight);
+		}
 	}
 }
 

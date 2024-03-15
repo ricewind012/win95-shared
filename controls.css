@@ -75,16 +75,16 @@ input:where([type="button"], [type="submit"]) {
 
 	min-width: 75px;
 
-	&:active {
-		color: transparent;
-		text-shadow: 1px 1px var(--color-button-text);
-		box-shadow: var(--border-button-sunken);
-	}
-
 	&:focus {
 		outline: dotted 1px var(--color-button-text);
 		outline-offset: calc(var(--button-spacing) * -1);
 		box-shadow: var(--border-button-focused);
+	}
+
+	&:active {
+		color: transparent;
+		text-shadow: 1px 1px var(--color-button-text);
+		box-shadow: var(--border-button-sunken);
 	}
 }
 

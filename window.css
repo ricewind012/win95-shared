@@ -68,7 +68,7 @@ body {
 
 	:root[focused] & {
 		background-color: var(--color-active-caption);
-		color: var(--color-active-caption);
+		color: var(--color-active-caption-text);
 	}
 }
 

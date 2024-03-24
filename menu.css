@@ -4,17 +4,21 @@
 
 	position: relative;
 
-	&::before {
+	&::before,
+	&::after {
 		content: '';
 
 		position: absolute;
-		top: 5px;
 
 		background-color: var(--color-button-text);
 	}
 
 	/* TODO: maybe a simpler version ? */
 	&[checked] {
+		&::before {
+			top: 5px;
+		}
+
 		&[type="checkbox"] {
 			&::before {
 				left: 6px;
@@ -38,16 +42,12 @@
 
 	&[type="parent"] {
 		&::after {
-			content: '';
-
-			position: absolute;
 			top: 4px;
 			right: 6px;
 			width: 4px;
 			height: 7px;
 
 			-webkit-mask: var(--icon-arrow-right);
-			background-color: var(--color-button-text);
 		}
 	}
 

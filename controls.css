@@ -27,8 +27,6 @@ textarea {
 		--color-button-text: var(--color-button-shadow);
 		--color-arrow-shadow: var(--color-button-highlight);
 		text-shadow: 1px 1px var(--color-button-highlight);
-
-		pointer-events: none;
 	}
 }
 

@@ -19,7 +19,7 @@ legend {
 }
 
 label {
-	gap: 6px;
+	gap: var(--label-spacing);
 
 	display: flex;
 	align-items: center;

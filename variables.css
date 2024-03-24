@@ -177,16 +177,23 @@
 	 * Dimensions
 	**/
 	--border-size:      2px;
-	--window-spacing:   2px;
 	--window-gap:       2px;
 
+	--icon-size:        16px;
 	--scrollbar-size:   16px;
+	--sel-button-size:  13px;
 
 	--titlebar-height:  18px;
 	--menubar-height:   18px;
 	--statusbar-height: 18px;
 
-	--icon-size:        16px;
+	--dialog-spacing:   7px;
+	--label-spacing:    6px;
+	--text-spacing:     4px;
+	--titlebar-spacing: 4px;
+	--toolbar-spacing:  8px;
+	--tree-spacing:     6px;
+	--window-spacing:   2px;
 
 	/**
 	 * Other

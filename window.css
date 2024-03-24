@@ -60,7 +60,7 @@ body {
 	background-color: var(--color-inactive-caption);
 	color: var(--color-inactive-caption-text);
 	padding: 1px 2px;
-	gap: 4px;
+	gap: var(--titlebar-spacing);
 
 	height: var(--titlebar-height);
 	display: flex;
@@ -115,7 +115,7 @@ body {
 }
 
 .toolbar {
-	gap: 8px;
+	gap: var(--toolbar-spacing);
 
 	display: flex;
 }

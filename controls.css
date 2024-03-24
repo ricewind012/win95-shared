@@ -124,8 +124,8 @@ input {
 	&[type="radio"] {
 		--color-to-change: var(--color-window);
 
-		width: 13px;
-		height: 13px;
+		width: var(--sel-button-size);
+		height: var(--sel-button-size);
 
 		&:active,
 		&:disabled {

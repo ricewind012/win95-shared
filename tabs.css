@@ -71,5 +71,9 @@
 	background-color: var(--color-button-face);
 	color: var(--color-window-text);
 	box-shadow: var(--border-button-raised);
-	padding: calc(var(--border-size) + 12px);
+	padding: calc(var(--border-size) + var(--tabpanel-spacing));
+
+	&[compact] {
+		--tabpanel-spacing: 2px;
+	}
 }

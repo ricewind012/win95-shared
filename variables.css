@@ -176,25 +176,30 @@
 	/**
 	 * Dimensions
 	**/
-	--border-size:      2px;
-	--window-gap:       2px;
+	--border-size:                2px;
+	--window-gap:                 2px;
 
-	--icon-size:        16px;
-	--scrollbar-size:   16px;
-	--sel-button-size:  13px;
+	--icon-size:                  16px;
+	--scrollbar-size:             16px;
+	--sel-button-size:            13px;
 
-	--titlebar-height:  18px;
-	--menubar-height:   18px;
-	--statusbar-height: 18px;
+	--titlebar-height:            18px;
+	--menubar-height:             18px;
+	--statusbar-height:           18px;
 
-	--dialog-spacing:   7px;
-	--label-spacing:    6px;
-	--tabpanel-spacing: 12px;
-	--text-spacing:     4px;
-	--titlebar-spacing: 4px;
-	--toolbar-spacing:  8px;
-	--tree-spacing:     6px;
-	--window-spacing:   2px;
+	--messagebox-spacing:         11px 10px;
+	--messagebox-content-spacing: 17px;
+
+	--dialog-spacing:             7px;
+	--dialog-button-spacing:      6px;
+
+	--label-spacing:              6px;
+	--tabpanel-spacing:           12px;
+	--text-spacing:               4px;
+	--titlebar-spacing:           4px;
+	--toolbar-spacing:            8px;
+	--tree-spacing:               6px;
+	--window-spacing:             2px;
 
 	/**
 	 * Other

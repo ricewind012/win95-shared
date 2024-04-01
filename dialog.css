@@ -1,0 +1,21 @@
+.dialog-content,
+.dialog-tabs-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.dialog-content {
+	gap: var(--dialog-button-spacing);
+	margin: var(--dialog-spacing);
+}
+
+.dialog-tabs-container {
+	flex-grow: 1;
+}
+
+.dialog-buttons {
+	gap: var(--dialog-button-spacing);
+
+	display: flex;
+	justify-content: end;
+}

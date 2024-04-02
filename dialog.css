@@ -1,16 +1,21 @@
-.dialog-content,
-.dialog-tabs-container {
+.dialog-body,
+.dialog-content {
 	display: flex;
 	flex-direction: column;
+}
+
+.dialog-body-container {
+	display: flex;
+	flex-grow: 1;
 }
 
 .dialog-content {
 	gap: var(--dialog-button-spacing);
 	margin: var(--dialog-spacing);
-}
 
-.dialog-tabs-container {
-	flex-grow: 1;
+	&[type="messagebox"] {
+		margin: var(--messagebox-spacing);
+	}
 }
 
 .dialog-buttons {
@@ -18,4 +23,34 @@
 
 	display: flex;
 	justify-content: end;
+
+	.dialog-content[type="messagebox"] & {
+		justify-content: center;
+	}
+}
+
+.dialog-icon {
+	--icon-size: 32px;
+
+	background-image: var(--icon);
+	margin-right: var(--dialog-content-spacing);
+
+	width: var(--icon-size);
+	height: var(--icon-size);
+
+	&[type="error"] {
+		--icon: var(--icon-dialog-error);
+	}
+
+	&[type="question"] {
+		--icon: var(--icon-dialog-question);
+	}
+
+	&[type="warning"] {
+		--icon: var(--icon-dialog-warning);
+	}
+}
+
+.dialog-body {
+	gap: var(--dialog-content-spacing);
 }

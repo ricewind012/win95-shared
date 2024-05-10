@@ -1288,7 +1288,7 @@ select {
 
 /* Nesting doesn't work here for some reason */
 ::-webkit-scrollbar-button:vertical:decrement {
-	background:
+	--arrow:
 		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) calc(var(--offset) + 7px)  calc(var(--offset) + 6px),
 		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) calc(var(--offset) + 6px)  calc(var(--offset) + 7px),
 		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) calc(var(--offset) + 7px)  calc(var(--offset) + 7px),
@@ -1308,7 +1308,7 @@ select {
 }
 
 ::-webkit-scrollbar-button:vertical:increment {
-	background:
+	--arrow:
 		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) calc(var(--offset) + 4px)  calc(var(--offset) + 6px),
 		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) calc(var(--offset) + 5px)  calc(var(--offset) + 6px),
 		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) calc(var(--offset) + 6px)  calc(var(--offset) + 6px),
@@ -1328,7 +1328,7 @@ select {
 }
 
 ::-webkit-scrollbar-button:horizontal:decrement {
-	background:
+	--arrow:
 		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) calc(var(--offset) + 8px) calc(var(--offset) + 4px),
 		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) calc(var(--offset) + 7px) calc(var(--offset) + 5px),
 		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) calc(var(--offset) + 8px) calc(var(--offset) + 5px),
@@ -1348,7 +1348,7 @@ select {
 }
 
 ::-webkit-scrollbar-button:horizontal:increment {
-	background:
+	--arrow:
 		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) calc(var(--offset) + 6px) calc(var(--offset) + 4px),
 		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) calc(var(--offset) + 6px) calc(var(--offset) + 5px),
 		linear-gradient(90deg, var(--color-button-text) 1px, var(--color-button-text)) calc(var(--offset) + 7px) calc(var(--offset) + 5px),

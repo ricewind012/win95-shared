@@ -255,9 +255,10 @@ progress {
 ::-webkit-scrollbar-button {
 	--offset: 0px;
 
-	background-color: var(--color-button-face) !important;
-	background-repeat: no-repeat !important;
-	background-size: 1px 1px !important;
+	background: var(--arrow);
+	background-color: var(--color-button-face);
+	background-repeat: no-repeat;
+	background-size: 1px 1px;
 }
 
 ::-webkit-scrollbar-button:active {

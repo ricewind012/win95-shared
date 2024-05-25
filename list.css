@@ -1,6 +1,6 @@
 .list-item {
 	/* alternative -webkit-line-clamp */
-	height: calc(var(--text-size) * var(--text-line) + 3px);
+	height: calc(var(--text-ui-size) * var(--text-line) + 3px);
 	display: flex;
 	align-items: center;
 }

@@ -116,6 +116,7 @@ body {
 
 .toolbar {
 	gap: var(--toolbar-spacing);
+	margin: 0 6px;
 
 	display: flex;
 }

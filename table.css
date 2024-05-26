@@ -5,7 +5,7 @@ table {
 
 .table-button {
 	text-align: left;
-	padding: 2px 7px;
+	padding: var(--table-row-spacing);
 
 	&:active {
 		box-shadow: var(--border-button-sunken-alt);
@@ -40,9 +40,14 @@ table {
 }
 
 .table-header-row {
+	background-color: var(--color-button-face);
 	box-shadow:
 		inset -1px -1px var(--color-button-highlight),
 		inset -2px -2px var(--color-button-shadow);
 	padding: 2px 5px;
 	padding-bottom: 3px;
+}
+
+.table-row {
+	padding: var(--table-row-spacing);
 }

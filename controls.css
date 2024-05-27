@@ -45,6 +45,13 @@ textarea {
 	position: relative;
 }
 
+input,
+textarea {
+	&:read-only {
+		--color-window: var(--color-button-face);
+	}
+}
+
 select,
 textarea,
 input:not([type]),

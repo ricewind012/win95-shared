@@ -54,6 +54,10 @@ body {
 .statusbar-item {
 	box-shadow: var(--border-statusbar);
 	padding: 2px 4px 1px 4px;
+
+	&:last-child {
+		flex-grow: 1;
+	}
 }
 
 .titlebar {

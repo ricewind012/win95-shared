@@ -45,8 +45,13 @@ textarea {
 	position: relative;
 }
 
-input,
-textarea {
+textarea,
+input:not([type]),
+input[type="url"],
+input[type="text"],
+input[type="number"],
+input[type="search"],
+input[type="password"] {
 	&:read-only {
 		--color-window: var(--color-button-face);
 	}

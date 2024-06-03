@@ -10,30 +10,29 @@ table {
 		box-shadow: var(--border-button-sunken-alt);
 	}
 
-	&::after {
-		content: '';
+	&[aria-sort="ascending"],
+	&[aria-sort="descending"] {
+		&::after {
+			content: '';
 
-		position: absolute;
-		top: -1px;
-		right: 7px;
-		width: 7px;
-		height: 100%;
+			position: absolute;
+			top: -1px;
+			right: 7px;
+			width: 7px;
+			height: 100%;
 
-		background-color: var(--color-to-change);
-		-webkit-mask: var(--button-img, none) no-repeat;
-		-webkit-mask-size: 7px 4px;
-		-webkit-mask-position: center;
+			background-color: var(--color-button-text);
+			-webkit-mask: var(--button-img, none) no-repeat;
+			-webkit-mask-size: 7px 4px;
+			-webkit-mask-position: center;
+		}
 	}
 
-	&[sort] {
-		--color-to-change: var(--color-button-text);
-	}
-
-	&[sort="ascending"] {
+	&[aria-sort="ascending"] {
 		--button-img: var(--icon-arrow-bottom);
 	}
 
-	&[sort="descending"] {
+	&[aria-sort="descending"] {
 		--button-img: var(--icon-arrow-top);
 	}
 }

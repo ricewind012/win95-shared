@@ -21,7 +21,7 @@
 	padding: 1px 5px 0 1px;
 
 	/* TODO: make it layout-independent */
-	.list-item[selected] > .list-item-name-container > & {
+	.list-item[aria-selected="true"] > .list-item-name-container > & {
 		background-color: var(--color-highlight);
 		color: var(--color-highlight-text);
 

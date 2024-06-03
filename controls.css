@@ -91,7 +91,7 @@ input:where([type="button"], [type="submit"]) {
 	height: 22px;
 
 	&:active,
-	&[selected] {
+	&[aria-selected="true"] {
 		background: var(--checkerboard);
 		box-shadow: var(--border-button-sunken);
 

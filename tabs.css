@@ -73,7 +73,7 @@
 	box-shadow: var(--border-button-raised);
 	padding: calc(var(--border-size) + var(--tabpanel-spacing));
 
-	&[compact] {
+	&.compact {
 		--tabpanel-spacing: 2px;
 	}
 }

@@ -1,70 +1,75 @@
-.menu-item {
+[role="menu"] [role="menuitem"],
+[role="menuitemcheckbox"],
+[role="menuitemradio"] {
 	line-height: 1.25;
 	padding: 2px 20px;
 
 	position: relative;
 
-	&::before,
-	&::after {
-		content: '';
-
-		position: absolute;
-
-		background-color: var(--color-button-text);
+	&[primary] {
+		font-weight: bold;
 	}
 
-	/* TODO: maybe a simpler version ? */
-	&[checked] {
-		&::before {
-			top: 5px;
-		}
-
-		&[type="checkbox"] {
-			&::before {
-				left: 6px;
-				width: 7px;
-				height: 7px;
-
-				-webkit-mask: var(--icon-checkmark);
-			}
-		}
-
-		&[type="radio"] {
-			&::before {
-				left: 7px;
-				width: 6px;
-				height: 6px;
-
-				-webkit-mask: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2IDYiPjxyZWN0IHg9IjEiIHdpZHRoPSI0IiBoZWlnaHQ9IjEiLz48cmVjdCB5PSIxIiB3aWR0aD0iNiIgaGVpZ2h0PSI0Ii8+PHJlY3QgeD0iMSIgeT0iNSIgd2lkdGg9IjQiIGhlaWdodD0iMSIvPjwvc3ZnPgo=');
-			}
-		}
-	}
-
-	&[type="parent"] {
+	&[aria-haspopup] {
 		&::after {
+			content: '';
+
+			position: absolute;
 			top: 4px;
 			right: 6px;
 			width: 4px;
 			height: 7px;
 
 			-webkit-mask: var(--icon-arrow-right);
+			background-color: var(--color-button-text);
 		}
 	}
 
-	&[disabled] {
+	&[aria-disabled="true"] {
 		--color-button-text: var(--color-button-shadow);
 		text-shadow: 1px 1px var(--color-button-highlight);
 
 		pointer-events: none;
 	}
 
-	&[primary] {
-		font-weight: bold;
-	}
-
-	&:hover {
+	&:hover,
+	&[aria-selected="true"] {
 		--color-button-text: var(--color-highlight-text);
 		background-color: var(--color-highlight);
 		color: var(--color-highlight-text);
 	}
 }
+
+[role="menuitemcheckbox"],
+[role="menuitemradio"] {
+	&::before {
+		content: '';
+
+		position: absolute;
+		top: 5px;
+
+		background-color: var(--color-button-text);
+	}
+}
+
+[role="menuitemcheckbox"][aria-checked="true"] {
+	&::before {
+		left: 6px;
+		width: 7px;
+		height: 7px;
+
+		-webkit-mask: var(--icon-checkmark);
+	}
+}
+
+[role="menuitemradio"][aria-checked="true"] {
+	&::before {
+		left: 7px;
+		width: 6px;
+		height: 6px;
+
+		-webkit-mask: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2IDYiPjxyZWN0IHg9IjEiIHdpZHRoPSI0IiBoZWlnaHQ9IjEiLz48cmVjdCB5PSIxIiB3aWR0aD0iNiIgaGVpZ2h0PSI0Ii8+PHJlY3QgeD0iMSIgeT0iNSIgd2lkdGg9IjQiIGhlaWdodD0iMSIvPjwvc3ZnPgo=');
+	}
+}
+
+

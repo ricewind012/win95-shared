@@ -6,7 +6,7 @@
 
 	position: relative;
 
-	&[primary] {
+	&.primary {
 		font-weight: bold;
 	}
 

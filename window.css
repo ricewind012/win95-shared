@@ -77,8 +77,8 @@ body {
 	align-items: center;
 
 	:root.focused & {
-		background-color: var(--color-active-caption);
-		color: var(--color-active-caption-text);
+		--color-inactive-caption: var(--color-active-caption);
+		--color-inactive-caption-text: var(--color-active-caption-text);
 	}
 }
 

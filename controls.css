@@ -87,8 +87,8 @@ input:where([type="button"], [type="submit"]) {
 }
 
 .icon-button {
-	min-width: 23px;
-	height: 22px;
+	min-width: var(--icon-button-width);
+	height: var(--icon-button-height);
 
 	&:active,
 	&[aria-selected="true"] {

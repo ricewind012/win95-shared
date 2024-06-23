@@ -193,12 +193,17 @@
 	--dialog-spacing:             7px;
 	--dialog-button-spacing:      6px;
 
+	--toolbar-spacing:            8px;
+	--toolbar-container-spacing:  6px;
+
+	--icon-button-width:          23px;
+	--icon-button-height:         22px;
+
 	--label-spacing:              6px;
 	--table-row-spacing:          2px 7px;
 	--tabpanel-spacing:           12px;
 	--text-spacing:               4px;
 	--titlebar-spacing:           4px;
-	--toolbar-spacing:            8px;
 	--tree-spacing:               6px;
 	--window-spacing:             2px;
 

@@ -1,5 +1,6 @@
 [role="listbox"] {
 	background-color: var(--color-window);
+	color: var(--color-window-text);
 	border: 1px solid var(--color-window-text);
 }
 

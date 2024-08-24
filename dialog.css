@@ -4,9 +4,20 @@
 	flex-direction: column;
 }
 
+.dialog-body {
+	gap: var(--dialog-content-spacing);
+}
+
 .dialog-body-container {
 	display: flex;
 	flex-grow: 1;
+}
+
+.dialog-buttons {
+	gap: var(--dialog-button-spacing);
+
+	display: flex;
+	justify-content: end;
 }
 
 .dialog-content {
@@ -15,17 +26,14 @@
 
 	&[type="messagebox"] {
 		margin: var(--messagebox-spacing);
-	}
-}
 
-.dialog-buttons {
-	gap: var(--dialog-button-spacing);
+		.dialog-body-container {
+			gap: var(--messagebox-content-spacing);
+		}
 
-	display: flex;
-	justify-content: end;
-
-	.dialog-content[type="messagebox"] & {
-		justify-content: center;
+		.dialog-buttons {
+			justify-content: center;
+		}
 	}
 }
 
@@ -49,8 +57,4 @@
 	&[type="warning"] {
 		--icon: var(--icon-dialog-warning);
 	}
-}
-
-.dialog-body {
-	gap: var(--dialog-content-spacing);
 }

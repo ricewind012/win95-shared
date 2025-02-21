@@ -1,6 +1,6 @@
 /*
  * Drawing pixel by pixel, because:
- * - -webkit-mask relies on background-color
+ * - mask relies on background-color
  * - <select> and ::-webkit-scrollbar can not have pseudo-elements
  */
 :root {

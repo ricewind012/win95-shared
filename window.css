@@ -97,9 +97,9 @@ body {
 		position: absolute;
 		inset: 0;
 
-		-webkit-mask: var(--button-img, none) no-repeat;
-		-webkit-mask-size: var(--button-img-size, auto auto);
-		-webkit-mask-position: var(--button-img-pos, center);
+		mask: var(--button-img, none) no-repeat;
+		mask-size: var(--button-img-size, auto auto);
+		mask-position: var(--button-img-pos, center);
 	}
 
 	&::before {

@@ -20,7 +20,7 @@
 			width: 4px;
 			height: 7px;
 
-			-webkit-mask: var(--icon-arrow-right);
+			mask: var(--icon-arrow-right);
 			background-color: var(--color-button-text);
 		}
 	}
@@ -58,7 +58,7 @@
 		width: 7px;
 		height: 7px;
 
-		-webkit-mask: var(--icon-checkmark);
+		mask: var(--icon-checkmark);
 	}
 }
 
@@ -68,7 +68,7 @@
 		width: 6px;
 		height: 6px;
 
-		-webkit-mask: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2IDYiPjxyZWN0IHg9IjEiIHdpZHRoPSI0IiBoZWlnaHQ9IjEiLz48cmVjdCB5PSIxIiB3aWR0aD0iNiIgaGVpZ2h0PSI0Ii8+PHJlY3QgeD0iMSIgeT0iNSIgd2lkdGg9IjQiIGhlaWdodD0iMSIvPjwvc3ZnPgo=');
+		mask: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2IDYiPjxyZWN0IHg9IjEiIHdpZHRoPSI0IiBoZWlnaHQ9IjEiLz48cmVjdCB5PSIxIiB3aWR0aD0iNiIgaGVpZ2h0PSI0Ii8+PHJlY3QgeD0iMSIgeT0iNSIgd2lkdGg9IjQiIGhlaWdodD0iMSIvPjwvc3ZnPgo=');
 	}
 }
 

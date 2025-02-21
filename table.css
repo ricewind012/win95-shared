@@ -22,9 +22,9 @@ table {
 			height: 100%;
 
 			background-color: var(--color-button-text);
-			-webkit-mask: var(--button-img, none) no-repeat;
-			-webkit-mask-size: 7px 4px;
-			-webkit-mask-position: center;
+			mask: var(--button-img, none) no-repeat;
+			mask-size: 7px 4px;
+			mask-position: center;
 		}
 	}
 

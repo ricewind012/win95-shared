@@ -137,9 +137,9 @@ input {
 				position: absolute;
 				inset: 0;
 
-				-webkit-mask: var(--control-img) no-repeat;
-				-webkit-mask-size: var(--control-img-size);
-				-webkit-mask-position: var(--control-img-pos);
+				mask: var(--control-img) no-repeat;
+				mask-size: var(--control-img-size);
+				mask-position: var(--control-img-pos);
 				background-color: var(--color-button-text);
 			}
 		}

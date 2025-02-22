@@ -58,8 +58,14 @@ input[type="password"] {
 	box-shadow: var(--border-field);
 	padding: calc(var(--border-size) + var(--input-spacing));
 
-	/* TODO: hardcode until there is a way to round calculations */
-	height: 21px;
+	height: round(
+		calc(
+			var(--input-spacing) * 2
+			+ var(--border-size) * 2
+			+ var(--text-full)
+		),
+		1px
+	);
 }
 
 button,
@@ -209,8 +215,9 @@ select {
 	background-color: var(--color-window);
 	background-repeat: no-repeat;
 	background-size: 1px 1px;
-	/* TODO: hardcode until there is a way to calculate the above */
-	padding-right: calc(2px + var(--input-spacing) + 16px);
+	padding-right: calc(
+		var(--border-size) + var(--input-spacing) + var(--scrollbar-size)
+	);
 }
 
 progress {
